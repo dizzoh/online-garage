@@ -1,4 +1,5 @@
 <?php
+session_start();
 $server = 'localhost';
 	$user = 'root';
 	$password ='';
@@ -10,28 +11,32 @@ $server = 'localhost';
 		die('Fail to connect '. mysqli_connect_error());
     }
 
-   session_start();
+   
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $email =$_POST['email'];
-      $pswd =$_POST['pswd']; 
+      $email = $_POST['email'];
+      $pswd =md5($_POST['pswd']); 
       
-      $sql = "SELECT email FROM customer WHERE email = '$email' and password = '$pswd'";
+      $sql = "SELECT * FROM customer WHERE email = '$email' and password = '$pswd'";
       $result = mysqli_query($connect,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $row = mysqli_fetch_assoc($result);
 
       
       $count = mysqli_num_rows($result);
+      
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
       if($count == 1) {
 
-         $_SESSION['login_user'] = $email;
+         $_SESSION['login_user'] = $row['email'];
+         $_SESSION['fname'] = $row['firstName'];
+         $_SESSION['mnumber'] = $row['mobileNumber'];
+
          
-         header("location: index.html");
+        header("location:homepage.php"); 
       }
        else if($email=="" || $pswd="" ){
           echo "you are supposed to fill all the fields";
@@ -43,19 +48,19 @@ $server = 'localhost';
       }
    }
 ?>
-<!doctype html>
+  <!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"> 
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Signin</title>
 
     
 
-    <!-- Bootstrap core CSS -->
+    
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
@@ -72,8 +77,8 @@ $server = 'localhost';
       }
 
     </style>
-    <!-- Custom styles for this template -->
-    <link href="signin.css" rel="stylesheet">
+    Custom styles for this template 
+     <link href="signin.css" rel="stylesheet">
   </head>
   <body class="text-center" background="tools.jpg">
       <center>
@@ -94,4 +99,4 @@ $server = 'localhost';
 </form>
 </center>
 </body>
-</html>
+</html> -->

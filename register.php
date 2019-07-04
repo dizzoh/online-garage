@@ -14,7 +14,7 @@
 		$fname = $_POST['fname'];
 		$lname = $_POST['lname'];
 		$email = $_POST['email'];
-        $pswd= $_POST['pswd'];
+        $pswd= md5($_POST['pswd']);
         $mnumber = $_POST['mnumber'];
         $cty = $_POST['cty'];
 
@@ -24,7 +24,7 @@
 				echo "you are supposed to fill all the fields";
 			}
 			else{
-			header("location:index.html");
+			header("location:homepage.php");
 
 		 }
 		 

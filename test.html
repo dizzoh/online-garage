@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+   
+    <title>Front page</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      
+
+    </style>
+
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #f1e0e0">
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-9 text-center">
+        <h1 class="blog-header-logo text-dark"> WELCOME TO AUTO SERVICE SOLUTIONS</h1>
+        </div>
+      </div>
+      
+       
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    
+      <nav class="blog-pagination">
+         <a class="btn  btn-outline-secondary" href="about.html" tabindex="-1">About us</a> 
+        <!-- <a class="btn   btn-outline-secondary" href="#" tabindex="-1">home</a> -->
+        <!-- <a class="btn   btn-outline-secondary" href="#" tabindex="-1">Main</a> -->
+         <button class="btn btn-sm btn-outline-secondary pull-right" data-target="#ymodel"
+        data-toggle="modal" style="margin-left: 700px">Register</button>
+         <button class="btn btn-sm btn-outline-secondary"  data-target="#mymodel"
+          data-toggle="modal">sign in</button>
+       
+      
+    </nav>
+
+
+    <div class="container">
+     
+         <div class="modal fade" id="ymodel">
+          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-center  text-primary">Register here</h3> 
+              <button type="button" class="close" data-dismiss="modal"> &times; </button>
+            </div>
+            <div class="modal-body">
+          
+              <form action="register.php" method="POST">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" name="fname" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" name="lname" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" name="pswd" class="form-control" id="inputPassword4" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword4">Confirm password</label>
+                      <input type="password" name="pswd" class="form-control" id="inputPassword4" placeholder="confirm password">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Phone number</label>
+                      <input type="text" name="mnumber" class="form-control" id="inputAddress" placeholder="+255">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-10">
+                        <label for="inputCity">City</label>
+                        <input type="text"  name="cty" class="form-control" id="inputCity">
+                      </div>
+                      
+                  <div class="modal-footer justify-content-center"> 
+                      <button class="btn btn-success"  type="submit" name="submit">Submit</button>  
+              </div>
+                     
+                  </form>
+          </div>
+
+          </div>
+       </div>
+       </div>
+          </div>
+
+        &nbsp;
+
+        <div class="container">
+         
+       <div class="modal fade" id="mymodel">
+          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="text-center  text-primary">sign in</h3>
+              <button type="button" class="close" data-dismiss="modal"> &times; </button>
+            </div>
+            <div class="modal-body">
+              <form action="login.php" method="POST" class="form-signin" >
+
+                   <div class="form-group">
+                   <label for="">Username:</label>
+                    <label for="inputEmail"  class="sr-only">Email address</label>
+                    <input type="email" id="inputEmail" name="email" class="form-control" 
+                    placeholder="Email address" required autofocus>
+                    <label for="">Password:</label>
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <br />
+                    <input type="password" id="inputPassword" name="pswd" class="form-control" placeholder="Password" required>
+                    <div class="checkbox mb-3">
+                      <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                      </label>
+                    </div>
+                   
+
+                  </div>
+                  <div class="modal-footer justify-content-center"> 
+                     <button class="btn btn-success"  type="submit" name="submit">Sign in</button>  
+                       
+                  </div>
+                  </form>
+            </div>
+              
+          </div>
+
+          </div>
+       </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded" style="background-color: #887c7c">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">We bring services at your doorstep...</h1>
+      <p class="lead my-3">We provide a reliable auto repair and maintainance services 
+          in the city</p>
+      <p class="lead mb-0">
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary"></strong>
+          <h3 class="mb-0"></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto">
+            <b>The best service can be attained and major work that our 
+            worker do for the customers</b>
+           </p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+         <img src="brand.jpg"  width="350" height="250"/>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success"></strong>
+          <h3 class="mb-0"></h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="mb-auto"><b>Our system is the dream of every user,come and
+             get quality services for your vehicle or request for service wherever you are </b></p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="oil.jpg"  width="350" height="250"/>
+           
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<entity_search_engine>
+  <fields id="server" class="SearchEngine">
+        <a class="text-muted" href="#">
+                <svg xmlns="#" width="20" height="20" fill="none" stroke="currentColor" 
+                stroke-linecap="round" stroke-linejoin="round" 
+                stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title>
+                <circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+              </a>
+    <field name="server"/>
+    <field name="getvar"/>
+  </fields> 
+  <entities> -->
+      <!-- <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div> -->
+    <!--   </aside>  /.blog-sidebar -->
+
+    <!--   </div>/.row -->
+
+<!-- </main> /.container -->
+
+
+<!-- <div class="td-footer-wrapper td-container-wrap td-footer-template-14 td_stretch_content"></div>
+<div class="td-container td-footer-bottom-full">
+  <div class="td-pb-row">
+    <div class="td-pb-span3"><aside class="footer-logo-wrap">
+      <a href="https://www.improgrammer.net/"> -->
+
+<footer class="blog-footer" style="text-align:center">
+  <p>
+    <a href="#" >Back to top</a>
+  </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
