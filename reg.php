@@ -22,7 +22,7 @@ body{
     <body>
   
         <center>
-        <form action="register.php" method="POST">
+        <form action="min.php" method="POST">
             <div class="form-row">
               <div class="col">
                 <input type="text" name="fname" class="form-control" placeholder="First name">
@@ -37,23 +37,26 @@ body{
                     <label for="inputEmail4">Email</label>
                     <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
                   </div>
-                  <!-- <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" name="pswd" class="form-control" id="inputPassword4" placeholder="Password">
-                  </div>
-                </div> -->
-                <!-- <div class="form-group">
-                  <label for="inputPassword4">Confirm password</label>
-                  <input type="password" name="" class="form-control" id="inputPassword4" placeholder="confirm password">
-                </div> -->
+                 
                 <div class="form-group">
                   <label for="inputAddress">Phone number</label>
-                  <input type="text" name="mnumber" class="form-control" id="inputAddress" placeholder="+255">
+                  <input type="text" name="contact" class="form-control" id="inputAddress" placeholder="+255">
                 </div>
-                
+                         
                  <button type="submit" class="btn btn-success">submit</button>
+
+
+
               </form>
           </center>
+
+
+ 
+
+
+
+
+
       
               <script src="jquery-3.3.1.slim.min.js" "></script>
               <script src="popper.min.js" "></script>

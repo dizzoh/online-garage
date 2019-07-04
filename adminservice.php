@@ -41,21 +41,7 @@
         padding-top: 20px;
 
       }
-      .navbar{
-        min-height: 33px;
-        margin-bottom: 0;
-        border-radius: 0;
-      }
-
-      .navbar-nav>li>a, .navbar-brand{
-        padding-top: 6px !important;
-        padding-bottom: 0 !important;
-        height: 33px;
-         
-
-
-      }
-
+      
      
     </style>
   
@@ -63,79 +49,20 @@
   <body style="background-color: #f1e0e0">
         <nav class="navbar navbar-default">
                 <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
+                  
                   <div class="navbar-header">
-                    <a class="navbar-brand" href="#">0g</a>
+                    <a class="navbar-brand" href="#">Automotive repair</a>
                   </div>
               
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                      <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">Pages</a></li>
-                      <li><a href="#">Post</a></li>
-                      <li><a href="#">Users</a></li>
-                    </ul>
-                    <!-- <form class="navbar-form navbar-left">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
-                    </form> -->
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#">Welcome</a></li>
-                      <li><a href="#">logout</a></li>
+                
+                   
                       
                     </ul>
                   </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
               </nav>
-<header id="header">
-        <div class="container">
-         <div class="row">
-            <div class="col-md-10">
-                <h2>  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                           Dashboard <small>Manage your site</small></h2>
-            </div>
-            <div class="col-md-2">
-                <div class="dropdown create">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Create content
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#">Add page</a></li>
-                      <li><a href="#">Add post</a></li>
-                      <li><a href="#">Add user</a></li>
-                      
-                    </ul>
-                  </div>
-                    <!-- <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" 
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                              Create content
-                              <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                              <li><a href="#">Add page</a></li>
-                              <li><a href="#">Add post</a></li>
-                              <li><a href="#">Add user</a></li>
-                            </ul>
-                          </div> -->
-            </div>
 
-        </div>
-    </div>
-</header>
 
-<section id="breadcrumb">
-<div class="container">
-<ol class="breadcrumb">
-<li class="active">Dashboard</li>
-
-</ol>
-</div>
-</section>
 
 <section id="main">
 <div class="container">
@@ -145,11 +72,10 @@
                         <a href="adminpanel.php" class="list-group-item active"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
                           Dashboard
                         </a>
-                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Service <span class="badge">12</span></a>
-                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Payment <span class="badge">12</span></a>
-                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Message <span class="badge">12</span></a>
-                        <a href="contact.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Contact us <span class="badge">12</span></a>
-                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>User <span class="badge">12</span></a>
+                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>Service Requests <span class="badge"></span></a>
+                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Add Technician <span class="badge"></span></a>
+                        <a href="report.php" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Report<span class="badge"></span></a>
+                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>User <span class="badge"></span></a>
 
                       
                       </div>
@@ -162,7 +88,7 @@
 
                       <div class="panel panel-default">
                             <div class="panel-heading">
-                              <h3 class="panel-title">Latest user</h3>
+                              <h3 class="panel-title">Service Requests</h3>
                             </div>
                             <div class="panel-body">
                               
@@ -223,7 +149,7 @@
 <footer id="footer">
 <p>Copyright, &copy; 2019</p>
 
-</footer>
+</footer> 
 
 
 
@@ -234,3 +160,4 @@
 
     </body>
 </html>
+7
